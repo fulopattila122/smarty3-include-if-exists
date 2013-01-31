@@ -18,5 +18,5 @@ Installation
 
 1. The easy way: copy the file compiler.include_if_exists.php in your smarty plugins directory.
 2. The silky way:
-    a.) put the file compiler.include_if_exists.php in an arbitrary folder
-    b.) add the plugin dir to smarty upon initialization `$smarty->addPluginsDir("your/path/to/the/files");`
+    - put the file compiler.include_if_exists.php in an arbitrary folder
+    - add the plugin dir to smarty upon initialization `$smarty->addPluginsDir("your/path/to/the/files");`
