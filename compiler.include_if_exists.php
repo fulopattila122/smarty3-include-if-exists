@@ -7,10 +7,10 @@
  * Inspired by Liu Song's similar plugin for Smarty v2
  * @see        http://code.google.com/p/smartyplugin-include-if-exists/
  *
- * @author     Attila Fulop <fulopattila122@gmail.com>
- * @version    1 2013-01-31
+ * @author     Attila Fulop
+ * @version    2016-04-20
  * 
- * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @license    MIT
  * @example    {include_if_exists file="foo.tpl" else="default.tpl"}
  * 
  */
@@ -91,11 +91,11 @@ class Smarty_Compiler_Include_If_Exists extends Smarty_Internal_CompileBase {
       }
 
       $output = '<?php if ($_smarty_tpl->templateExists(' . $include_file . ")) {\n"
-         . "\t\t echo \$_smarty_tpl->getSubTemplate (" . $include_file
+         . "\t\t echo \$_smarty_tpl->_subTemplateRender(" . $include_file
          . ", $_cache_id, $_compile_id, $_caching, $_cache_lifetime, $_vars, $_parent_scope);\n";
       if (isset($include_else)) {
          $output .= "\t} elseif (\$_smarty_tpl->templateExists($include_else)) {\n"
-         . "\t\t echo \$_smarty_tpl->getSubTemplate (" . $include_else
+         . "\t\t echo \$_smarty_tpl->_subTemplateRender(" . $include_else
          . ", $_cache_id, $_compile_id, $_caching, $_cache_lifetime, $_vars, $_parent_scope);\n";
       }
       $output .= "\t}\n?>\n";

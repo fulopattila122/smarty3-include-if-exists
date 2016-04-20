@@ -1,0 +1,16 @@
+{
+    "name": "konekt/smarty3-include-if-exists",
+    "type": "library",
+    "description": "Smarty v3 plugin for specifying conditional inclusion of subtemplates within smarty templates",
+    "license": "MIT",
+    "keywords": ["smarty"],
+    "authors": [
+        {
+            "name": "Attila Fulop",
+            "homepage": "https://github.com/fulopattila122"
+        }
+    ],
+    "require": {
+        "php": ">=5.2"
+    }
+}
