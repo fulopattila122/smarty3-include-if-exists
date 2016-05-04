@@ -8,8 +8,15 @@
         {
             "name": "Attila Fulop",
             "homepage": "https://github.com/fulopattila122"
+        },
+	{
+            "name": "Uwe Tews",
+            "email": "uwe.tews@googlemail.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/fulopattila122/smarty3-include-if-exists/issues"
+    },
     "require": {
         "php": ">=5.2"
     }
