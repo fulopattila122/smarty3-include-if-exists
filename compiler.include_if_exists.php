@@ -80,12 +80,12 @@ class Smarty_Compiler_Include_If_Exists extends Smarty_Internal_CompileBase
             $output .= self::$includeCompiler->compile($new_args, $compiler, $parameter);
             $output .= "<?php } else {\n";
             $output .= "unset(\$___tpl);\n";
-            $output .= "}\n}\n?>\n";
+            $output .= "}\n?>\n";
             return $output;
         }
         $output .= "<?php } else {\n";
         $output .= "unset(\$___tpl);\n";
-        $output .= "}\n}\n?>\n";
+        $output .= "}\n?>\n";
         return $output;
     }
-} 
+}
